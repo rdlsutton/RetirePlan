@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@color/colorBlack">
+
+    <TextView
+        android:id="@+id/textViewYearLabel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/colorBlack"
+        android:gravity="end"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:text="@string/year"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextYear"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextYear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        android:maxLength="16"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewYearLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewReportedEarningsLabel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:text="@string/reported_earnings"
+        app:layout_constraintTop_toBottomOf="@+id/textViewYearLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextReportedEarnings"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextReportedEarnings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        android:maxLength="16"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextYear"
+        app:layout_constraintStart_toEndOf="@+id/textViewReportedEarningsLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewAverageEarningsLabel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:text="@string/average_earnings"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReportedEarningsLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextAverageEarnings"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextAverageEarnings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        android:maxLength="16"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextReportedEarnings"
+        app:layout_constraintStart_toEndOf="@+id/textViewAverageEarningsLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

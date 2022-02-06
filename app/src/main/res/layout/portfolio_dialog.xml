@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@color/colorBlack">
+
+    <TextView
+        android:id="@+id/textViewMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:text="@string/month"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerMonth"/>
+
+    <Spinner
+        android:id="@+id/spinnerMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorBlack"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewMonth"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewYearLabel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:text="@string/year"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMonth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextYear"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextYear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        android:maxLength="16"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMonth"
+        app:layout_constraintStart_toEndOf="@+id/textViewYearLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewBalance"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:text="@string/balance"
+        app:layout_constraintTop_toBottomOf="@+id/textViewYearLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextBalance"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextBalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        android:maxLength="16"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextYear"
+        app:layout_constraintStart_toEndOf="@+id/textViewBalance"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

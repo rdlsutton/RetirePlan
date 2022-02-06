@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <ImageView
+        android:id="@+id/imageViewTopDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen_divider"
+        android:contentDescription="@string/divider"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+<?Mortgage Payoff Data?>
+    <TextView
+        android:id="@+id/textViewSnapMortgagePayoffLabel"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/mortgage_payoff_date"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTopDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSnapMortgagePayoff"/>
+
+    <TextView
+        android:id="@+id/textViewSnapMortgagePayoff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTopDivider"
+        app:layout_constraintStart_toEndOf="@+id/textViewSnapMortgagePayoffLabel"
+        app:layout_constraintEnd_toEndOf="parent">
+    </TextView>
+
+<?Mortgage Monthly Payoff?>
+    <TextView
+        android:id="@+id/textViewSnapMortgageMonthlyLabel"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/mortgage_payoff_amount"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapMortgagePayoffLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSnapMortgageMonthly"/>
+
+    <TextView
+        android:id="@+id/textViewSnapMortgageMonthly"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapMortgagePayoff"
+        app:layout_constraintStart_toEndOf="@+id/textViewSnapMortgageMonthlyLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<?Mortgage Equity?>
+    <TextView
+        android:id="@+id/textViewSnapMortgageEquityLabel"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/mortgage_equity"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapMortgageMonthlyLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSnapMortgageEquity"/>
+
+    <TextView
+        android:id="@+id/textViewSnapMortgageEquity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapMortgageMonthly"
+        app:layout_constraintStart_toEndOf="@+id/textViewSnapMortgageEquityLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<?Social Security?>
+    <TextView
+        android:id="@+id/textViewSnapSocialSecurityLabel"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/monthly_social_security"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapMortgageEquityLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSnapSocialSecurity"/>
+
+    <TextView
+        android:id="@+id/textViewSnapSocialSecurity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapMortgageEquity"
+        app:layout_constraintStart_toEndOf="@+id/textViewSnapSocialSecurityLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<?Portfolio End Date?>
+    <TextView
+        android:id="@+id/textViewSnapPortfolioEndLabel"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/portfolio_end_date"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapSocialSecurityLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSnapPortfolioEnd"/>
+
+    <TextView
+        android:id="@+id/textViewSnapPortfolioEnd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapSocialSecurity"
+        app:layout_constraintStart_toEndOf="@+id/textViewSnapPortfolioEndLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<?After Tax Monthly?>
+    <TextView
+        android:id="@+id/textViewSnapAfterTaxMonthlyLabel"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/after_tax_monthly"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapPortfolioEndLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSnapAfterTaxMonthly"/>
+
+    <TextView
+        android:id="@+id/textViewSnapAfterTaxMonthly"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapPortfolioEnd"
+        app:layout_constraintStart_toEndOf="@+id/textViewSnapAfterTaxMonthlyLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<?Mortgage Balance?>
+    <TextView
+        android:id="@+id/textViewSnapMortgageBalanceLabel"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/mortgage_balance"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapAfterTaxMonthlyLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSnapMortgageBalance"/>
+
+    <TextView
+        android:id="@+id/textViewSnapMortgageBalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapAfterTaxMonthly"
+        app:layout_constraintStart_toEndOf="@+id/textViewSnapMortgageBalanceLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<?House Value?>
+    <TextView
+        android:id="@+id/textViewSnapHouseValueLabel"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/house_value"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapMortgageBalanceLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSnapHouseValue"/>
+
+    <TextView
+        android:id="@+id/textViewSnapHouseValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapMortgageBalance"
+        app:layout_constraintStart_toEndOf="@+id/textViewSnapHouseValueLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<?Monthly Withdrawal?>
+    <TextView
+        android:id="@+id/textViewSnapMonthlyWithdrawalLabel"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/monthly_withdrawal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapHouseValueLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSnapMonthlyWithdrawal"/>
+
+    <TextView
+        android:id="@+id/textViewSnapMonthlyWithdrawal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapHouseValue"
+        app:layout_constraintStart_toEndOf="@+id/textViewSnapMonthlyWithdrawalLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<?SSI Start Year?>
+    <TextView
+        android:id="@+id/textViewSnapSSIStartYearLabel"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/start_year"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapMonthlyWithdrawalLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSnapSSIStartYear"/>
+
+    <TextView
+        android:id="@+id/textViewSnapSSIStartYear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapMonthlyWithdrawal"
+        app:layout_constraintStart_toEndOf="@+id/textViewSnapSSIStartYearLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<?SSI Start Month?>
+    <TextView
+        android:id="@+id/textViewSnapSSIStartMonthLabel"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/start_month"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapSSIStartYearLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSnapSSIStartMonth"/>
+
+    <TextView
+        android:id="@+id/textViewSnapSSIStartMonth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_underline_green"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSnapSSIStartYear"
+        app:layout_constraintStart_toEndOf="@+id/textViewSnapSSIStartMonthLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<?Floating Action Button?>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonSnapshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:maxImageSize="40dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="28dp"
+        app:backgroundTint="@color/colorRed"
+        android:contentDescription="@string/save"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
